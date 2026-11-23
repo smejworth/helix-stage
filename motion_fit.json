@@ -1,0 +1,16 @@
+{
+ "settings": {
+  "octave mix": 0.5,
+  "filter freq Hz": 100.0,
+  "sweep depth Hz": 150.0,
+  "sensitivity": 0.05,
+  "attack s": 0.05,
+  "decay s": 0.8,
+  "filter Q": 2.0,
+  "filter mix": 1.0,
+  "comp threshold dB": -10.0,
+  "drive": 8.2
+ },
+ "score": 2.484,
+ "renders": 24
+}

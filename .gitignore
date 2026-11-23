@@ -1,0 +1,77 @@
+# Allow-list: only the files named below are tracked. Local inputs, renders, presets, saved states and
+# environments stay on the machine.
+*
+!*/
+!.gitignore
+!README.md
+
+# chain builders, renders and fits
+!make_chain*.py
+!render_*.py
+!fit_*.py
+!*_fit*.json
+
+# plugin helpers and checks
+!helixlab.py
+!save_state.py
+!probe1.py
+!probe2.py
+!probe3.py
+!knob_test.py
+!knob_sweep.py
+!many_instances.py
+!cab_check.py
+!cab_check2.py
+
+# matching EQ and limiter
+!match_eq.py
+!master_limit.py
+
+# measuring scripts
+!bandwidth.py
+!close_detail.py
+!compare_spectra.py
+!envelope_check.py
+!filter_motion.py
+!filter_over_time.py
+!find_filter.py
+!first_notes.py
+!narrow_peaks.py
+!oct_place.py
+!phrase_sweep.py
+!repeat_check.py
+!spectral_motion.py
+!steady_peaks.py
+!stick_out.py
+!tearing.py
+!tightness.py
+!tone_traits.py
+!wah_measure.py
+!wow_per_note.py
+
+# the friend's guide scripts, the brief, the report, and the notes that hold the findings
+!guide/*.py
+!README.md
+!_status.md
+!docs/decisions.md
+!docs/first_session_brief.md
+!docs/first_session_report.md
+
+# Local only, even if a line above matches (later lines win)
+pbvenv/
+_archive/
+__pycache__/
+*.wav
+*.mp3
+*.npz
+*.npy
+*.bin
+*.dll
+*.hlx
+*.hls
+*.pdf
+*.jpg
+
+# Example audio
+!input/guitar_played.wav
+!work/mp3/best_reference_plus_limiter.mp3
